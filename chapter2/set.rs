@@ -16,3 +16,12 @@
  * HashMap BTreeMap
  * key 必须为可哈希类型 value为编译阶段 已知大小类型 HashMap 无序 BTreeMap 有序
  */
+
+/**
+ * 集合 HashSet BTreeSet
+ * 为HashMap BTreeMap 将value设置为空的特定类型 有序性相同
+ */
+
+/**
+ * 优先队列 基于二叉最大堆实现
+ */
