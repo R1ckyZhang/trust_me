@@ -33,6 +33,14 @@ fn can_fly(s:impl Fly+Debug)-> impl Fly{
     }
     s
 }
+fn dyn_can_fly(s:impl Fly+Debug+'static) ->Box<dyn Fly>{
+      if s.fly{
+        println!("{:?} can fly",s);
+    }else{
+        println!("{:?} can not fly",s);
+    }
+    s
+}
 
 let pig = Pig;
 println!("{:?}",fly_static(pig));
